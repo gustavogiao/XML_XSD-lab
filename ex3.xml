@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<classroom>
+
+    <item category="Computer">
+        <code>PC-0</code>
+        <inventory_number>12345</inventory_number>
+        <description>Desktop Computer</description>
+        <price>800.00</price>
+    </item>
+
+    <item category="Computer">
+        <code>PC-1</code>
+        <inventory_number>12346</inventory_number>
+        <description>Laptop Computer</description>
+        <price>1200.00</price>
+    </item>
+
+    <item category="Projector">
+        <code>PR-0</code>
+        <inventory_number>123456</inventory_number>
+        <description>HD Projector</description>
+        <price>500.00</price>
+    </item>
+
+</classroom>

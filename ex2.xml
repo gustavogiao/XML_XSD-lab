@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalog>
+
+    <book>
+        <title>Livro Random</title>
+
+        <authors>
+            <author>Cristiano Ronaldo</author>
+            <author>Francisco Trincão</author>
+        </authors>
+
+        <publisher>Random Publisher</publisher>
+        <year>2024</year>
+
+        <characteristics>
+            <cover>Hardcover</cover>
+            <number_of_pages>200</number_of_pages>
+        </characteristics>
+
+        <index>
+            <chapter>
+                <title>Chapter 1</title>
+                <page>1</page>
+            </chapter>
+            <chapter>
+                <title>Chapter 2</title>
+                <page>15</page>
+            </chapter>
+        </index>
+
+    </book>
+
+    <book>
+        <title>Livro Random 2</title>
+
+        <authors>
+            <author>Messi</author>
+            <author>Neymar</author>
+        </authors>
+
+        <publisher>Random Publisher 2</publisher>
+        <year>2023</year>
+
+        <characteristics>
+            <cover>Paperback</cover>
+            <number_of_pages>300</number_of_pages>
+        </characteristics>
+
+        <index>
+            <chapter>
+                <title>Chapter 1</title>
+                <page>1</page>
+            </chapter>
+            <chapter>
+                <title>Chapter 2</title>
+                <page>20</page>
+            </chapter>
+        </index>
+
+    </book>
+
+</catalog>

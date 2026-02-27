@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cookbook>
+    <recipe>
+        <author>Gustavo Gião</author>
+        <title>Simple Cake</title>
+        <ingredients>
+            <ingredient>
+                <name>Flour</name>
+                <quantity>2</quantity>
+                <unit>cups</unit>
+            </ingredient>
+            <ingredient>
+                <name>Sugar</name>
+                <quantity>1</quantity>
+                <unit>cup</unit>
+            </ingredient>
+        </ingredients>
+        <description>Mix the flour and sugar together.</description>
+        <calories>500</calories>
+    </recipe>
+</cookbook>
