@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Definição do Schema XML.
+    xs:schema é o elemento raiz de qualquer ficheiro XSD.
+    xmlns:xs define o namespace padrão do XML Schema.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+        Definição do elemento raiz do XML: <cookbook>
+        Todo o XML validado por este XSD tem de começar por <cookbook>.
+    -->
+    <xs:element name="cookbook">
+
+        <!--
+            cookbook é um tipo complexo porque contém outros elementos.
+        -->
+        <xs:complexType>
+
+            <!--
+                xs:sequence obriga a que os elementos apareçam
+                exatamente nesta ordem.
+            -->
+            <xs:sequence>
+
+                <!--
+                    Elemento <recipe>.
+                    maxOccurs="unbounded" significa que podem existir
+                    várias receitas dentro do cookbook.
+                -->
+                <xs:element name="recipe" maxOccurs="unbounded">
+
+                    <!-- recipe também é complexo -->
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <!-- Elementos simples (apenas texto) -->
+                            <xs:element name="author" type="xs:string"/>
+                            <xs:element name="title" type="xs:string"/>
+
+                            <!--
+                                ingredients é complexo porque contém
+                                vários ingredient.
+                            -->
+                            <xs:element name="ingredients">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <!--
+                                            Pode haver vários ingredientes.
+                                            maxOccurs="unbounded" permite 1..N
+                                        -->
+                                        <xs:element name="ingredient" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+
+                                                    <!-- Elementos simples -->
+                                                    <xs:element name="name" type="xs:string"/>
+
+                                                    <!--
+                                                        quantity é decimal
+                                                        (permite números com vírgula)
+                                                    -->
+                                                    <xs:element name="quantity" type="xs:decimal"/>
+
+                                                    <!-- unidade do ingrediente -->
+                                                    <xs:element name="unit" type="xs:string"/>
+
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <!-- descrição textual -->
+                            <xs:element name="description" type="xs:string"/>
+
+                            <!--
+                                calories é inteiro.
+                                Não pode conter texto nem casas decimais.
+                            -->
+                            <xs:element name="calories" type="xs:integer"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

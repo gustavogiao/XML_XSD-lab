@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<cookbook>
+<cookbook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="ex1.xsd">
+
     <recipe>
         <author>Gustavo Gião</author>
         <title>Simple Cake</title>
@@ -18,4 +20,5 @@
         <description>Mix the flour and sugar together.</description>
         <calories>500</calories>
     </recipe>
+
 </cookbook>

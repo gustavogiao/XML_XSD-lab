@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<university>
+
+    <name>Universidade de Aveiro</name>
+    <location>Aveiro, Portugal</location>
+
+    <disciplines_catalog>
+        <discipline id="D1">
+            <name>Programação</name>
+            <ects>6</ects>
+        </discipline>
+        <discipline id="D2">
+            <name>Algoritmos</name>
+            <ects>6</ects>
+        </discipline>
+    </disciplines_catalog>
+
+    <students>
+
+        <student id="10232342">
+
+            <name>Gustavo Gião</name>
+            <affiliation>Computer Science</affiliation>
+            <enrollment_year>2021</enrollment_year>
+
+            <course>
+                <name>Tecnologias de Informação</name>
+                <academic_year>2025/2026</academic_year>
+            </course>
+
+            <registered_disciplines>
+                <discipline_ref ref="D1"/>
+                <discipline_ref ref="D2"/>
+            </registered_disciplines>
+
+            <approved_disciplines>
+                <approval discipline_ref="D1">
+                    <grade>15.0</grade>
+                </approval>
+            </approved_disciplines>
+
+        </student>
+
+    </students>
+
+</university>

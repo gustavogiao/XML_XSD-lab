@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<software>
+
+    <name>Software Random 1</name>
+    <version>1.0</version>
+    <release_date>2024-01-15</release_date>
+    <license>MIT</license>
+
+    <reports>
+
+        <report id="BUG-001" type="bug" status="open" priority="high">
+            <title>Bug in Login Module</title>
+            <description>Users are unable to log in with correct credentials.</description>
+            <reporter>John Doe</reporter>
+            <date_reported>2024-02-10</date_reported>
+        </report>
+
+    </reports>
+
+</software>

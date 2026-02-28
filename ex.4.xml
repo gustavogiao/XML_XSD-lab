@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subject>
+
+    <name>Tecnologias de Integração</name>
+    <academic_year>2025/2026</academic_year>
+    <ects>6</ects>
+
+    <evaluation_methods>
+
+        <evaluation_method id="M1" type="continuous">
+
+            <evaluation_element id="T1" weight="50">
+                <name>Test 1</name>
+            </evaluation_element>
+
+            <evaluation_element id="T2" weight="50">
+                <name>Test 2</name>
+            </evaluation_element>
+
+        </evaluation_method>
+
+        <evaluation_method id="M2" type="exam">
+
+            <evaluation_element id="FE" weight="100">
+                <name>Final Exam</name>
+            </evaluation_element>
+
+        </evaluation_method>
+
+    </evaluation_methods>
+
+    <students>
+
+        <student>
+            <number>2021001</number>
+            <name>Gustavo Gião</name>
+
+            <grades>
+                <grade element_ref="T1" value="14.5"/>
+                <grade element_ref="T2" value="15.0"/>
+            </grades>
+
+        </student>
+
+        <student>
+            <number>2021002</number>
+            <name>Ana Silva</name>
+
+            <grades>
+                <grade element_ref="FE" value="16.0"/>
+            </grades>
+
+        </student>
+
+    </students>
+
+</subject>
