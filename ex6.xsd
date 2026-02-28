@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="university">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="location" type="xs:string"/>
+
+                <xs:element name="disciplines_catalog">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="discipline" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+
+                                        <xs:element name="ects">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="30"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+                                    <xs:attribute name="id"
+                                                  type="xs:ID"
+                                                  use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="students">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="student" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="affiliation" type="xs:string"/>
+
+                                        <xs:element name="enrollment_year">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1900"/>
+                                                    <xs:maxInclusive value="2100"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                        <xs:element name="course">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="name" type="xs:string"/>
+                                                    <xs:element name="academic_year" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <xs:element name="registered_disciplines">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="discipline_ref"
+                                                                maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="ref"
+                                                                          type="xs:IDREF"
+                                                                          use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <xs:element name="approved_disciplines">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="approval"
+                                                                maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="grade">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:decimal">
+                                                                            <xs:minInclusive value="0"/>
+                                                                            <xs:maxInclusive value="20"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+
+                                                            <xs:attribute name="discipline_ref"
+                                                                          type="xs:IDREF"
+                                                                          use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+
+                                    <xs:attribute name="id"
+                                                  type="xs:integer"
+                                                  use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

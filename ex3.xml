@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<classroom>
+<classroom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="ex3.xsd">
 
     <item category="Computer">
         <code>PC-0</code>

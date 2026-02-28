@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="software">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="version" type="xs:string"/>
+
+                <xs:element name="release_date" type="xs:date"/>
+
+                <xs:element name="license" type="xs:string"/>
+
+                <xs:element name="reports">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="report" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="description" type="xs:string"/>
+                                        <xs:element name="reporter" type="xs:string"/>
+
+                                        <xs:element name="date_reported" type="xs:date"/>
+
+                                    </xs:sequence>
+
+                                    <xs:attribute name="id"
+                                                  type="xs:ID"
+                                                  use="required"/>
+
+                                    <xs:attribute name="type"
+                                                  use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="bug"/>
+                                                <xs:enumeration value="feature"/>
+                                                <xs:enumeration value="improvement"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                    <xs:attribute name="status"
+                                                  use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="open"/>
+                                                <xs:enumeration value="in_progress"/>
+                                                <xs:enumeration value="closed"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                    <xs:attribute name="priority"
+                                                  use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="low"/>
+                                                <xs:enumeration value="medium"/>
+                                                <xs:enumeration value="high"/>
+                                                <xs:enumeration value="critical"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

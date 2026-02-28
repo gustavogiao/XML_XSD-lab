@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<software>
+<software xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="ex5.xsd">
 
     <name>Software Random 1</name>
     <version>1.0</version>

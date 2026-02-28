@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subject>
+<subject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ex4.xsd">
 
     <name>Tecnologias de Integração</name>
-    <academic_year>2025/2026</academic_year>
+    <academic_year>2026</academic_year>
     <ects>6</ects>
 
     <evaluation_methods>
