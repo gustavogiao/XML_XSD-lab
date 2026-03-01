@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<subject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ex8.xsd">
+    <name>Tecnologias de Integração</name>
+    <attendance_sheet>
+        <date>2026-03-10</date>
+        <start_time>2026-03-10T09:00:00</start_time>
+        <end_time>2026-03-10T11:00:00</end_time>
+
+        <students>
+            <student present="yes">
+                <number>131231</number>
+                <name>Gustavo</name>
+            </student>
+            <student present="yes">
+                <number>42343</number>
+                <name>João</name>
+            </student>
+        </students>
+    </attendance_sheet>
+</subject>

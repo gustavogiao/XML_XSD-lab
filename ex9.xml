@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ex9.xsd">
+
+    <number>321321</number>
+    <date>2025-01-15</date>
+    <seller>
+        <name>Gustavo Gião</name>
+        <address>Street Example 32..43</address>
+    </seller>
+    <purchaser>
+        <name>John Doe</name>
+        <address>Street Example 43.1323</address>
+    </purchaser>
+    <bill>
+        <item>
+            <qty>1</qty>
+            <description>Produto bonito nao sei que</description>
+            <unit_price>5.00</unit_price>
+            <amount>5.00</amount>
+        </item>
+        <item>
+            <qty>1</qty>
+            <description>Sopa de Coentros</description>
+            <unit_price>5.00</unit_price>
+            <amount>5.00</amount>
+        </item>
+        <total>10</total>
+    </bill>
+</invoice>
