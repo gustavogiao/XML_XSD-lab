@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="ex2_filter.xsl"?>
+<bank_transactions>
+
+    <transaction id="T001">
+        <date>2026-03-06</date>
+
+        <source_account>
+            <bank>BPI</bank>
+            <account_number>11111</account_number>
+        </source_account>
+
+        <destination_account>
+            <bank>BPI</bank>
+            <account_number>22222</account_number>
+        </destination_account>
+
+        <amount currency="EUR">100</amount>
+
+        <description>Internal transfer</description>
+
+    </transaction>
+
+    <transaction id="T002">
+        <date>2026-03-06</date>
+
+        <source_account>
+            <bank>BPI</bank>
+            <account_number>12345</account_number>
+        </source_account>
+
+        <destination_account>
+            <bank>Santander</bank>
+            <account_number>98765</account_number>
+        </destination_account>
+
+        <amount currency="EUR">200</amount>
+
+        <description>Transfer</description>
+
+    </transaction>
+
+</bank_transactions>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="ex2.xsl"?>
+<bank_transactions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ex2.xsd">
+    <transaction id="43">
+        <date>2026-03-06</date>
+        <source_account>
+            <bank>BPI</bank>
+            <account_number>123254</account_number>
+        </source_account>
+        <destination_account>
+            <bank>BPI</bank>
+            <account_number>123232</account_number>
+        </destination_account>
+        <amount currency="EUR">15000</amount>
+        <description>Invoice Payment</description>
+    </transaction>
+</bank_transactions>
