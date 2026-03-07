@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ex1_html.xsl"?>
+<receipt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ex1.xsd">
+    <store>
+        <name>Super Mercado</name>
+
+        <location>
+            <city>Lisbon</city>
+            <country>Portugal</country>
+        </location>
+
+        <contact>
+            <phone>(+351) 1234567890</phone>
+            <email>info@supermercado.pt</email>
+        </contact>
+
+        <vat_number>PT123456789</vat_number>
+    </store>
+
+    <transaction>
+
+        <date>2024-05-11</date>
+        <time>15:30:00</time>
+
+        <cashier>Maria Silva</cashier>
+
+        <items>
+
+            <item>
+                <name>Macas</name>
+                <quantity>3</quantity>
+                <price>1.99</price>
+                <vat_rate>0.06</vat_rate>
+            </item>
+
+            <item>
+                <name>Pao</name>
+                <quantity>1</quantity>
+                <price>2.49</price>
+                <vat_rate>0.06</vat_rate>
+            </item>
+
+            <item>
+                <name>Leite</name>
+                <quantity>2</quantity>
+                <price>3.29</price>
+                <vat_rate>0.06</vat_rate>
+            </item>
+
+        </items>
+
+        <total_before_vat>11.26</total_before_vat>
+        <vat_amount>0.68</vat_amount>
+        <total_after_vat>11.94</total_after_vat>
+
+    </transaction>
+
+    <buyer>
+
+        <name>Maria Sousa</name>
+
+        <address>
+            <street>Rua Principal, 123</street>
+            <city>Lisbon</city>
+            <postal_code>1000-200</postal_code>
+            <country>Portugal</country>
+        </address>
+
+        <vat_number>PT987654321</vat_number>
+
+    </buyer>
+
+</receipt>
