@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="publisher">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="books">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="book">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="subtitle" type="xs:string"/>
+                                        <xs:element name="year">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1000"/>
+                                                    <xs:maxInclusive value="2100"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="authors">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="author" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="index">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="chapter" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="title" type="xs:string"/>
+                                                                <xs:element name="page">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:integer">
+                                                                            <xs:minInclusive value="1"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+</xs:schema>

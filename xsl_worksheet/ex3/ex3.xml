@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="ex3.xsl"?>
+<publisher xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="ex3.xsd">
+    <books>
+        <book id="BOOK01">
+            <title>Titulo de teste</title>
+            <subtitle>Subtitulo de Teste</subtitle>
+            <year>2026</year>
+            <authors>
+                <author>Gustavo</author>
+            </authors>
+            <index>
+                <chapter>
+                    <title>Chapter 1</title>
+                    <page>1</page>
+                </chapter>
+                <chapter>
+                    <title>Chapter 2</title>
+                    <page>3</page>
+                </chapter>
+            </index>
+        </book>
+    </books>
+</publisher>
