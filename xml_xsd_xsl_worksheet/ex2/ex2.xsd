@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="timeCapsule">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="creator" type="xs:string"/>
+                <xs:element name="purpose" type="xs:string"/>
+                <xs:element name="artifacts">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="artifact" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="director" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="author" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="year">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1500"/>
+                                                    <xs:maxInclusive value="2027"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="description" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="type">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="book"/>
+                                                <xs:enumeration value="movie"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="year" type="xs:integer" use="required"/>
+        </xs:complexType>
+
+    </xs:element>
+</xs:schema>

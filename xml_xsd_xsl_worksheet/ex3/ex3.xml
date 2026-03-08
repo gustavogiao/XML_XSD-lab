@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ex3.xsl"?>
+<missionLog mission="Orion-12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ex3.xsd">
+
+    <date>2025-03-02</date>
+
+    <astronaut>Dr. Alex Carter</astronaut>
+
+    <tasks>
+
+        <task status="completed">
+            <title>Oxygen Level Check</title>
+            <description>
+                Checked oxygen levels in module B.
+            </description>
+            <timeSpent>30</timeSpent>
+        </task>
+
+        <task status="pending">
+            <title>Satellite Calibration</title>
+            <description>
+                Adjust signal for Earth communication.
+            </description>
+            <timeSpent>60</timeSpent>
+        </task>
+
+        <task status="completed">
+            <title>Microgravity Experiment</title>
+            <description>
+                Observed plant growth under zero gravity.
+            </description>
+            <timeSpent>90</timeSpent>
+        </task>
+
+    </tasks>
+
+</missionLog>

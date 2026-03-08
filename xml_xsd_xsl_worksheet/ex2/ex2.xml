@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ex2.xsl"?>
+<timeCapsule year="2025" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ex2.xsd">
+
+    <creator>Manuel</creator>
+
+    <purpose>
+        Preserve cultural elements for the future
+    </purpose>
+
+    <artifacts>
+
+        <artifact type="book">
+
+            <title>The Pragmatic Programmer</title>
+            <author>Andrew Hunt, David Thomas</author>
+            <year>1999</year>
+
+            <description>
+                A guide to software craftsmanship.
+            </description>
+
+        </artifact>
+
+        <artifact type="movie">
+
+            <title>Inception</title>
+            <director>Christopher Nolan</director>
+            <year>2010</year>
+
+            <description>
+                A mind-bending thriller about dreams and reality.
+            </description>
+
+        </artifact>
+
+    </artifacts>
+
+</timeCapsule>
