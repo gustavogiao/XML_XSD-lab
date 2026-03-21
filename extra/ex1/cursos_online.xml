@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cursos_online.xsl"?>
+
+<platform xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="cursos_online.xsd">
+
+    <course id="C01" level="beginner">
+
+        <title>XML Fundamentals</title>
+        <year>2026</year>
+
+        <modules>
+            <module>
+                <name>Introduction</name>
+                <duration>2</duration>
+            </module>
+
+            <module>
+                <name>XSD</name>
+                <duration>3</duration>
+            </module>
+        </modules>
+
+        <students>
+            <student id="S01">
+                <name>Gustavo</name>
+                <grade>20</grade>
+            </student>
+            <student id="S02">
+                <name>Ratmir</name>
+                <grade>20</grade>
+            </student>
+        </students>
+
+    </course>
+
+    <course id="C02" level="advanced">
+
+        <title>XSLT Mastery</title>
+        <year>2026</year>
+
+        <modules>
+            <module>
+                <name>XSL Basics</name>
+                <duration>4</duration>
+            </module>
+        </modules>
+
+        <students>
+            <student id="S03">
+                <name>Maria</name>
+                <grade>20</grade>
+            </student>
+        </students>
+
+    </course>
+
+</platform>

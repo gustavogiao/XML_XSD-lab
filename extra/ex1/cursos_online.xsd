@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="platform">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="course" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="title" type="xs:string"/>
+                        <xs:element name="year">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="2000"/>
+                                    <xs:maxInclusive value="2100"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="modules">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="module" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="name" type="xs:string"/>
+                                                <xs:element name="duration">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:integer">
+                                                            <xs:minInclusive value="1"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="students">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="student" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="name" type="xs:string"/>
+                                                <xs:element name="grade">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:integer">
+                                                            <xs:minInclusive value="0"/>
+                                                            <xs:maxInclusive value="20"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                            <xs:attribute name="id" type="xs:string"/>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string"/>
+                    <xs:attribute name="level">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="beginner"/>
+                                <xs:enumeration value="advanced"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
