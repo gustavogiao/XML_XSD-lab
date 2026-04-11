@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="encomendas.xsd">
+        
+    <order id="001" status="completed">
+
+        <customer>
+            <name>Gustavo</name>
+            <email>gustavo@email.com</email>
+        </customer>
+
+        <items>
+            <item>
+                <name>Portátil</name>
+                <quantity>1</quantity>
+                <price>1200</price>
+            </item>
+            <item>
+                <name>Mouse</name>
+                <quantity>1</quantity>
+                <price>100</price>
+            </item>
+        </items>
+
+        <date>2026-04-11</date>
+
+    </order>
+
+    <order id="002" status="pending">
+
+        <customer>
+            <name>Ana</name>
+            <email>ana@email.com</email>
+        </customer>
+
+        <items>
+            <item>
+                <name>Keyboard</name>
+                <quantity>1</quantity>
+                <price>50</price>
+            </item>
+        </items>
+
+        <date>2026-04-11</date>
+
+    </order>
+
+</orders>
