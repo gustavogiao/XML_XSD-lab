@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="ex2.xsl"?>
+
+<liga
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ex1.xsd">
+
+    <nome>Futebol 1ª Liga</nome>
+    <jornada>34</jornada>
+    <jogos>
+        <jogo>
+            <equipas>
+                <equipa side="HOME">
+                    <nome>Paços de Ferreira</nome>
+                    <golos>0</golos>
+                </equipa>
+                <equipa side="AWAY">
+                    <nome>Benfica</nome>
+                    <golos>2</golos>
+                    <marcadores>
+                        <marcador nome="H.Araújo" minuto="5" />
+                        <marcador nome="H.Araújo" minuto="44" />
+                    </marcadores>
+                </equipa>
+            </equipas>
+        </jogo>
+        <jogo>
+            <equipas>
+                <equipa side="HOME">
+                    <nome>Arouca</nome>
+                    <golos>0</golos>
+                </equipa>
+                <equipa side="AWAY">
+                    <nome>Belenenses SAD</nome>
+                    <golos>0</golos>
+                </equipa>
+            </equipas>
+        </jogo>
+        <jogo>
+            <equipas>
+                <equipa side="HOME">
+                    <nome>Tondela</nome>
+                    <golos>2</golos>
+                    <marcadores>
+                        <marcador nome="M. Sagnan" minuto="41" />
+                        <marcador nome="J. Pedro" minuto="77" />
+                    </marcadores>
+                </equipa>
+                <equipa side="AWAY">
+                    <nome>Boavista</nome>
+                    <golos>2</golos>
+                    <marcadores>
+                        <marcador nome="N. Gorre" minuto="51" />
+                        <marcador nome="Y. Njie" minuto="86" />
+                    </marcadores>
+                </equipa>
+            </equipas>
+        </jogo>
+    </jogos>
+</liga>

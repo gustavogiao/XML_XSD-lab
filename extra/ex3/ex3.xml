@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Exemplo completo de XML -->
+
+<?xml-stylesheet type="text/xsl" href="ex3.xsl"?>
+
+<company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ex3.xsd">
+
+    <!-- Informação da empresa -->
+    <info>
+        <name>Tech Solutions</name>
+        <founded year="2010">Portugal</founded>
+        <active>true</active>
+    </info>
+
+    <!-- Lista de departamentos -->
+    <departments>
+
+        <department id="D01" type="IT">
+
+            <name>Development</name>
+
+            <!-- Lista de funcionários -->
+            <employees>
+
+                <employee id="E01">
+
+                    <name>Gustavo</name>
+                    <age>22</age>
+                    <salary currency="EUR">1200.50</salary>
+
+                    <!-- contacto -->
+                    <contact>
+                        <email>gustavo@email.com</email>
+                        <phone>(+351) 999999999</phone>
+                    </contact>
+
+                    <!-- lista (repetição) -->
+                    <skills>
+                        <skill>Java</skill>
+                        <skill>XML</skill>
+                        <skill>SQL</skill>
+                    </skills>
+
+                </employee>
+
+                <employee id="E02">
+
+                    <name>Ana</name>
+                    <age>25</age>
+                    <salary currency="EUR">1500.00</salary>
+
+                    <contact>
+                        <email>ana@email.com</email>
+                        <phone>(+351) 888888888</phone>
+                    </contact>
+
+                    <skills>
+                        <skill>Python</skill>
+                        <skill>Data Analysis</skill>
+                    </skills>
+
+                </employee>
+
+            </employees>
+
+        </department>
+
+        <department id="D02" type="HR">
+
+            <name>Human Resources</name>
+
+            <employees>
+                <employee id="E03">
+                    <name>Maria</name>
+                    <age>30</age>
+                    <salary currency="EUR">1100</salary>
+
+                    <contact>
+                        <email>maria@email.com</email>
+                        <phone>(+351) 777777777</phone>
+                    </contact>
+
+                    <skills>
+                        <skill>Communication</skill>
+                        <skill>Recruitment</skill>
+                    </skills>
+
+                </employee>
+            </employees>
+
+        </department>
+
+    </departments>
+
+    <!-- Elemento vazio -->
+    <notes/>
+
+</company>
