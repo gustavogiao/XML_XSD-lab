@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="empresa.xsd">
+
+    <projeto id="1" estado="PLANEADO">
+        <nome>Projeto de TI</nome>
+        <tarefa prioridade="ALTA">
+            <descricao>Estudar 1</descricao>
+            <duracao>60</duracao>
+        </tarefa>
+        <tarefa prioridade="BAIXA">
+            <descricao>estudar 2</descricao>
+            <duracao>12</duracao>
+        </tarefa>
+        <tarefa prioridade="MEDIA">
+            <descricao>Comer coentros</descricao>
+            <duracao>90</duracao>
+        </tarefa>
+    </projeto>
+
+    <projeto id="2" estado="EM_EXECUCAO">
+        <nome>Projeto de TI</nome>
+        <tarefa prioridade="ALTA">
+            <descricao>Estudar 1</descricao>
+            <duracao>60</duracao>
+        </tarefa>
+        <tarefa prioridade="BAIXA">
+            <descricao>estudar 2</descricao>
+            <duracao>12</duracao>
+        </tarefa>
+        <tarefa prioridade="MEDIA">
+            <descricao>Comer coentros</descricao>
+            <duracao>90</duracao>
+        </tarefa>
+    </projeto>
+
+</empresa>

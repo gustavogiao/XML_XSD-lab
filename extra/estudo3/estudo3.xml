@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="estudo3.xsl"?>
+
+<academia
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="estudo3.xsd">
+
+    <curso id="1" area="programacao">
+        <nome>Java Fundamentals</nome>
+        <duracao>40</duracao>
+        <estadoCurso>ATIVO</estadoCurso>
+        <formandos>
+            <formando codigo="F01">
+                <nome>João Pereira</nome>
+                <email>joao@email.com</email>
+                <idade>22</idade>
+            </formando>
+            <formando codigo="F02">
+                <nome>Ana Silva</nome>
+                <email>ana@email.com</email>
+                <idade>25</idade>
+            </formando>
+        </formandos>
+    </curso>
+
+    <curso id="2" area="design">
+        <nome>UX Design</nome>
+        <duracao>30</duracao>
+        <estadoCurso>CONCLUIDO</estadoCurso>
+        <formandos>
+            <formando codigo="F03">
+                <nome>Pedro Costa</nome>
+                <email>pedro@email.com</email>
+                <idade>28</idade>
+            </formando>
+        </formandos>
+    </curso>
+</academia>

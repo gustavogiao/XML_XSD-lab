@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+    <livro isbn="12345" categoria="programacao">
+        <titulo>Java Avançado</titulo>
+        <autor tipo="principal">João Silva</autor>
+        <ano>2022</ano>
+        <disponivel>true</disponivel>
+    </livro>
+
+    <livro isbn="67890" categoria="base_dados">
+        <titulo>SQL Essencial</titulo>
+        <autor tipo="principal">Ana Costa</autor>
+        <ano>2020</ano>
+        <disponivel>false</disponivel>
+    </livro>
+</biblioteca>

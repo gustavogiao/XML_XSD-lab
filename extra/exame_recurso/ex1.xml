@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="ex1.xsl"?>
+
+<orders
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ex1.xsd">
+
+    <customer>
+        <name>Great Lakes Food Market</name>
+        <contactName>Howard Snyder</contactName>
+        <phone>(503) 555-7555</phone>
+
+        <ordersList>
+            <order>
+                <employeeID>6</employeeID>
+                <orderDate>1997-05-06T00:00:00</orderDate>
+                <country>USA</country>
+            </order>
+
+            <order>
+                <employeeID>8</employeeID>
+                <orderDate>1997-07-04T00:00:00</orderDate>
+                <country>USA</country>
+            </order>
+
+            <order>
+                <employeeID>1</employeeID>
+                <orderDate>1997-07-31T00:00:00</orderDate>
+                <country>USA</country>
+            </order>
+        </ordersList>
+
+    </customer>
+
+</orders>

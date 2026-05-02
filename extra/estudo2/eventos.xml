@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="eventos.xsl"?>
+
+<eventos
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="eventos.xsd">
+
+    <evento id="1" tipo="musica">
+        <nome>Festival de Jazz</nome>
+        <organizador>
+            <nome>Associação Cultural do Norte</nome>
+            <email>contacto@acn.pt</email>
+        </organizador>
+        <localizacao>Porto</localizacao>
+        <data>2026-05-12</data>
+        <estadoEvento>AGENDADO</estadoEvento>
+        <participantes>
+            <participante codigo="P01">
+                <nome>Ana Martins</nome>
+                <email>ana.martins@email.com</email>
+                <tipoParticipacao>Oradora</tipoParticipacao>
+            </participante>
+            <participante codigo="P02">
+                <nome>João Silva</nome>
+                <email>joao.silva@email.com</email>
+                <tipoParticipacao>Convidado</tipoParticipacao>
+            </participante>
+        </participantes>
+    </evento>
+
+    <evento id="2" tipo="teatro">
+        <nome>Noite de Teatro</nome>
+        <organizador>
+            <nome>Companhia Palco Aberto</nome>
+            <email>geral@palcoaberto.pt</email>
+        </organizador>
+        <localizacao>Lisboa</localizacao>
+        <data>2026-04-30</data>
+        <estadoEvento>EM_CURSO</estadoEvento>
+        <participantes>
+            <participante codigo="P03">
+                <nome>Maria Costa</nome>
+                <email>maria.costa@email.com</email>
+                <tipoParticipacao>Atriz</tipoParticipacao>
+            </participante>
+            <participante codigo="P04">
+                <nome>Pedro Lopes</nome>
+                <email>pedro.lopes@email.com</email>
+                <tipoParticipacao>Convidado</tipoParticipacao>
+            </participante>
+        </participantes>
+    </evento>
+
+    <evento id="3" tipo="exposicao">
+        <nome>Exposição Arte Moderna</nome>
+        <organizador>
+            <nome>Museu Central</nome>
+            <email>info@museucentral.pt</email>
+        </organizador>
+        <localizacao>Aveiro</localizacao>
+        <data>2026-03-18</data>
+        <estadoEvento>FINALIZADO</estadoEvento>
+        <participantes>
+            <participante codigo="P05">
+                <nome>Sofia Almeida</nome>
+                <email>sofia.almeida@email.com</email>
+                <tipoParticipacao>Curadora</tipoParticipacao>
+            </participante>
+        </participantes>
+    </evento>
+
+</eventos>

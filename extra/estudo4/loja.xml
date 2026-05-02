@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="loja.xsl"?>
+
+<loja
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="loja.xsd">
+
+    <encomenda id="E1" estado="ENTREGUE">
+        <cliente nif="123456789">
+            <nome>João Silva</nome>
+            <email>joao@email.com</email>
+        </cliente>
+        <data>2026-04-10</data>
+        <itens>
+            <item codigo="P01">
+                <produto>Teclado</produto>
+                <quantidade>2</quantidade>
+                <precoUnitario>25</precoUnitario>
+            </item>
+            <item codigo="P02">
+                <produto>Rato</produto>
+                <quantidade>1</quantidade>
+                <precoUnitario>15</precoUnitario>
+            </item>
+        </itens>
+    </encomenda>
+
+    <encomenda id="E2" estado="PENDENTE">
+        <cliente nif="987654321">
+            <nome>Ana Costa</nome>
+            <email>ana@email.com</email>
+        </cliente>
+        <data>2026-04-12</data>
+        <itens>
+            <item codigo="P03">
+                <produto>Monitor</produto>
+                <quantidade>1</quantidade>
+                <precoUnitario>200</precoUnitario>
+            </item>
+        </itens>
+    </encomenda>
+</loja>

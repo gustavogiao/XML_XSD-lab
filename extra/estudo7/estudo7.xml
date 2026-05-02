@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<academia
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="estudo7.xsd">
+    <curso codigo="CN-TI" estado="ATIVO">
+        <nome>Tecnologias de Informação</nome>
+        <area>Área: Informática</area>
+        <duracao>3</duracao>
+
+        <formadores>
+            <formador id="1">
+                <nome>Fábio Marques</nome>
+                <email>fabio@ua.pt</email>
+            </formador>
+            <formador id="2">
+                <nome>Joaquim Ferreira</nome>
+                <email>jjfc@ua.pt</email>
+            </formador>
+        </formadores>
+    </curso>
+
+    <curso codigo="CN-EI" estado="ATIVO">
+        <nome>Engenharia Informática</nome>
+        <area>Área: Informática</area>
+        <duracao>3</duracao>
+
+        <formadores>
+            <formador id="1">
+                <nome>Fábio Marques</nome>
+                <email>fabio@ua.pt</email>
+            </formador>
+            <formador id="2">
+                <nome>Joaquim Ferreira</nome>
+                <email>jjfc@ua.pt</email>
+            </formador>
+        </formadores>
+    </curso>
+
+</academia>

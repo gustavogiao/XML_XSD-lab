@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<viagens
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="viagens.xsd">
+
+    <viagem id="1" tipo="lazer">
+        <destino>Portugal, Aveiro</destino>
+        <data>2025-12-07</data>
+        <preco>500.00</preco>
+    </viagem>
+    <viagem id="2" tipo="negocios">
+        <destino>Itália, Roma</destino>
+        <data>2025-12-05</data>
+        <preco>500.00</preco>
+    </viagem>
+
+</viagens>

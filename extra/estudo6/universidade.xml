@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<universidade
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="universidade.xsd">
+    <curso codigo="LEI">
+        <nome>Engenharia Informática</nome>
+        <duracao>3</duracao>
+        <alunos>
+            <aluno numero="1001">
+                <nome>João</nome>
+                <media>14.5</media>
+            </aluno>
+            <aluno numero="1002">
+                <nome>Ana</nome>
+                <media>17.2</media>
+            </aluno>
+        </alunos>
+    </curso>
+
+    <curso codigo="GEST">
+        <nome>Gestão</nome>
+        <duracao>3</duracao>
+        <alunos>
+            <aluno numero="2001">
+                <nome>Pedro</nome>
+                <media>13.0</media>
+            </aluno>
+        </alunos>
+    </curso>
+</universidade>

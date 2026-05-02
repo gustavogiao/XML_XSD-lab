@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="estadoProjetoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PLANEADO"/>
+            <xs:enumeration value="EM_EXECUCAO"/>
+            <xs:enumeration value="CONCLUIDO"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tarefaType">
+        <xs:sequence>
+            <xs:element name="descricao" type="xs:string"/>
+            <xs:element name="duracao" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="prioridade" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="projeto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="tarefa" type="tarefaType" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:int" use="required"/>
+                        <xs:attribute name="estado" type="estadoProjetoType"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

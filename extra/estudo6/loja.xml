@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="loja.xsl"?>
+
+<loja>
+    <produto categoria="tecnologia">
+        <nome>Teclado</nome>
+        <preco>25</preco>
+    </produto>
+    <produto categoria="tecnologia">
+        <nome>Rato</nome>
+        <preco>15</preco>
+    </produto>
+    <produto categoria="casa">
+        <nome>Cadeira</nome>
+        <preco>100</preco>
+    </produto>
+</loja>

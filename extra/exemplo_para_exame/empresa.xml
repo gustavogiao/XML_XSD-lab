@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="empresa.xsl"?>
+
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="empresa.xsd">
+
+    <info>
+        <nome>Tech Academy</nome>
+        <pais>Portugal</pais>
+        <fundada ano="2015">Aveiro</fundada>
+    </info>
+
+    <departamentos>
+        <departamento id="1" area="TI" estado="ATIVO">
+            <nome>Desenvolvimento</nome>
+            <responsavel>Ana Costa</responsavel>
+
+            <colaboradores>
+                <colaborador codigo="C01" tipo="EFETIVO">
+                    <nome>João Silva</nome>
+                    <email>joao@email.com</email>
+                    <idade>28</idade>
+                    <salario>1500</salario>
+                    <dataEntrada>2022-03-10</dataEntrada>
+                    <skills>
+                        <skill nivel="AVANCADO">Java</skill>
+                        <skill nivel="INTERMEDIO">Spring</skill>
+                    </skills>
+                </colaborador>
+
+                <colaborador codigo="C02" tipo="ESTAGIARIO">
+                    <nome>Maria Lopes</nome>
+                    <email>maria@email.com</email>
+                    <idade>22</idade>
+                    <salario>900</salario>
+                    <dataEntrada>2024-01-15</dataEntrada>
+                    <skills>
+                        <skill nivel="BASICO">HTML</skill>
+                        <skill nivel="INTERMEDIO">XML</skill>
+                    </skills>
+                </colaborador>
+            </colaboradores>
+        </departamento>
+
+        <departamento id="2" area="RH" estado="INATIVO">
+            <nome>Recursos Humanos</nome>
+            <responsavel>Pedro Santos</responsavel>
+
+            <colaboradores>
+                <colaborador codigo="C03" tipo="EFETIVO">
+                    <nome>Sofia Martins</nome>
+                    <email>sofia@email.com</email>
+                    <idade>35</idade>
+                    <salario>1800</salario>
+                    <dataEntrada>2020-09-01</dataEntrada>
+                    <skills>
+                        <skill nivel="AVANCADO">Recrutamento</skill>
+                    </skills>
+                </colaborador>
+            </colaboradores>
+        </departamento>
+    </departamentos>
+</empresa>

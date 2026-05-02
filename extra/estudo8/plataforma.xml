@@ -1,0 +1,27 @@
+<plataforma
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="plataforma.xsd">
+    <curso id="C1" categoria="programacao">
+        <titulo>Java Avançado</titulo>
+        <duracao>40</duracao>
+        <preco>120.5</preco>
+
+        <instrutor>
+            <nome>Ana Silva</nome>
+            <email>ana@email.com</email>
+        </instrutor>
+
+        <alunos>
+            <aluno numero="1">
+                <nome>João</nome>
+                <email>joao@email.com</email>
+                <nota>15</nota>
+            </aluno>
+            <aluno numero="2">
+                <nome>Maria</nome>
+                <email>maria@email.com</email>
+                <nota>18</nota>
+            </aluno>
+        </alunos>
+    </curso>
+</plataforma>

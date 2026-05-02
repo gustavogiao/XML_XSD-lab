@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- ENUMS / SIMPLE TYPES -->
+
+    <xs:simpleType name="estadoDepartamentoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ATIVO"/>
+            <xs:enumeration value="INATIVO"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoColaboradorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="EFETIVO"/>
+            <xs:enumeration value="ESTAGIARIO"/>
+            <xs:enumeration value="FREELANCER"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nivelSkillType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BASICO"/>
+            <xs:enumeration value="INTERMEDIO"/>
+            <xs:enumeration value="AVANCADO"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idadeType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="18"/>
+            <xs:maxInclusive value="70"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="salarioType">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^@]+\.[^@]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- COMPLEX TYPES -->
+
+    <xs:complexType name="fundadaType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="ano" type="xs:int" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="infoType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="pais" type="xs:string"/>
+            <xs:element name="fundada" type="fundadaType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="skillType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="nivel" type="nivelSkillType" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="colaboradorType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="email" type="emailType"/>
+            <xs:element name="idade" type="idadeType"/>
+            <xs:element name="salario" type="salarioType"/>
+            <xs:element name="dataEntrada" type="xs:date"/>
+            <xs:element name="skills">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="skill" type="skillType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+
+        <xs:attribute name="codigo" type="xs:string" use="required"/>
+        <xs:attribute name="tipo" type="tipoColaboradorType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="departamentoType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="responsavel" type="xs:string"/>
+            <xs:element name="colaboradores">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="colaborador" type="colaboradorType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+
+        <xs:attribute name="id" type="xs:int" use="required"/>
+        <xs:attribute name="area" type="xs:string" use="required"/>
+        <xs:attribute name="estado" type="estadoDepartamentoType" use="required"/>
+    </xs:complexType>
+
+    <!-- ROOT -->
+
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="info" type="infoType"/>
+                <xs:element name="departamentos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="departamento" type="departamentoType" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

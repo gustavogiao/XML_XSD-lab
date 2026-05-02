@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="eventos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="evento" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="organizador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nome" type="xs:string"/>
+                                        <xs:element name="email" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="localizacao" type="xs:string"/>
+                            <xs:element name="data" type="xs:date"/>
+                            <xs:element name="estadoEvento">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="AGENDADO"/>
+                                        <xs:enumeration value="EM_CURSO"/>
+                                        <xs:enumeration value="FINALIZADO"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="participantes">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="participante" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nome" type="xs:string"/>
+                                                    <xs:element name="email" type="xs:string"/>
+                                                    <xs:element name="tipoParticipacao">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="Oradora"/>
+                                                                <xs:enumeration value="Convidado"/>
+                                                                <xs:enumeration value="Atriz"/>
+                                                                <xs:enumeration value="Curadora"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="codigo" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required"/>
+                        <xs:attribute name="tipo" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

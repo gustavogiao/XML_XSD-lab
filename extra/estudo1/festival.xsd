@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="festival">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="nome" type="xs:string"/>
+        <xs:element name="local" type="xs:string"/>
+        <xs:element name="ano">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="1800"/>
+                    <xs:maxInclusive value="2026"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>        
+        <xs:element name="filmes">
+          <xs:complexType>
+            <xs:sequence>
+              
+              <xs:element name="filme" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titulo" type="xs:string"/>
+                    <xs:element name="realizador" type="xs:string"/>
+                    <xs:element name="duracao" type="xs:int"/>
+                    
+                    <xs:element name="sessoes">
+                      <xs:complexType>
+                        <xs:sequence>
+                          
+                          <xs:element name="sessao" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="data" type="xs:string"/>
+                                <xs:element name="hora" type="xs:string"/>
+                                <xs:element name="sala" type="xs:string"/>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:int" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                          
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    
+                  </xs:sequence>
+                  <xs:attribute name="codigo" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

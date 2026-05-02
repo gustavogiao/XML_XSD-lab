@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="produtos.xsl"?>
+
+<loja>
+    <produto categoria="ELETRONICA">
+        <nome>Televisão</nome>
+        <preco>500</preco>
+        <stock>3</stock>
+    </produto>
+
+    <produto categoria="ELETRONICA">
+        <nome>Rato</nome>
+        <preco>20</preco>
+        <stock>15</stock>
+    </produto>
+
+    <produto categoria="ROUPA">
+        <nome>T-shirt</nome>
+        <preco>15</preco>
+        <stock>8</stock>
+    </produto>
+</loja>

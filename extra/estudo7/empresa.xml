@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="empresa.xsd">
+    <departamento id="1" area="TI">
+        <nome>Desenvolvimento</nome>
+        <responsavel>Ana Costa</responsavel>
+
+        <colaboradores>
+            <colaborador codigo="C1" tipo="EFETIVO">
+                <nome>João</nome>
+                <email>joao@email.com</email>
+                <salario>1500</salario>
+            </colaborador>
+
+            <colaborador codigo="C2" tipo="ESTAGIARIO">
+                <nome>Maria</nome>
+                <email>maria@email.com</email>
+                <salario>900</salario>
+            </colaborador>
+        </colaboradores>
+
+    </departamento>
+</empresa>

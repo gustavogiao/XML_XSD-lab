@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cinema
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="cinema.xsd">
+    <filme id="1" genero="COMEDIA">
+        <titulo>Cão de Caça</titulo>
+        <duracao>90</duracao>
+        <classificacao>5.0</classificacao>
+    </filme>
+    <filme id="2" genero="ACAO">
+        <titulo>Ratmir, o Rei</titulo>
+        <duracao>25</duracao>
+        <classificacao>3.8</classificacao>
+    </filme>
+</cinema>

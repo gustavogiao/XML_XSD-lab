@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:simpleType name="precoType">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="duracaoType">
+        <xs:restriction base="xs:int">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="instrutorType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="notaType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="alunoType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="nota" type="notaType"/>
+        </xs:sequence>
+        <xs:attribute name="numero" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:simpleType name="categoriaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="programacao"/>
+            <xs:enumeration value="design"/>
+            <xs:enumeration value="marketing"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="cursoType">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="duracao" type="duracaoType"/>
+            <xs:element name="preco" type="precoType"/>
+            <xs:element name="instrutor" type="instrutorType"/>
+            <xs:element name="alunos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="aluno" maxOccurs="unbounded" type="alunoType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="categoria" type="categoriaType"/>
+    </xs:complexType>
+
+    <xs:element name="plataforma">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="curso" type="cursoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>                
+    </xs:element>
+</xs:schema>

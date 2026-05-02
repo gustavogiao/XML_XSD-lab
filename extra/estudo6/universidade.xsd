@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+
+<xs:simpleType name="mediaType">
+    <xs:restriction base="xs:double">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="20"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="alunoType">
+    <xs:sequence>
+        <xs:element name="nome" type="xs:string"/>
+        <xs:element name="media" type="mediaType"/>
+    </xs:sequence>
+    <xs:attribute name="numero" type="xs:int" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="cursoType">
+    <xs:sequence>
+        <xs:element name="nome" type="xs:string"/>
+            <xs:element name="duracao" type="xs:int"/>
+                    <xs:element name="alunos">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="aluno" type="alunoType" maxOccurs="unbounded"></xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="xs:string" use="required"/>
+</xs:complexType>
+
+
+<xs:element name="universidade">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="curso" type="cursoType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

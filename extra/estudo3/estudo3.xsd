@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="academia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="curso" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="duracao" type="xs:integer"/>
+                            <xs:element name="estadoCurso">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="ATIVO"/>
+                                        <xs:enumeration value="CONCLUIDO"/>
+                                        <xs:enumeration value="PENDENTE"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="formandos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="formando" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nome" type="xs:string"/>
+                                                    <xs:element name="email" type="xs:string"/>
+                                                    <xs:element name="idade" type="xs:integer"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="codigo" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer"/>
+                        <xs:attribute name="area" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

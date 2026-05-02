@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<festival
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="festival.xsd">
+
+<nome>Os Mais Pesados da Capital</nome>
+<local>Lisboa, MEO Arena</local>
+<ano>2026</ano>
+
+<filmes>
+    <filme codigo="FESTIVAL-4321">
+        <titulo>Cona</titulo>
+        <realizador>John B.</realizador>
+        <duracao>35</duracao>
+        <sessoes>
+            <sessao id="1">
+                <data>08-05-2026</data>
+                <hora>18</hora>
+                <sala>25</sala>
+            </sessao>
+            <sessao id="2">
+                <data>07-05-2026</data>
+                <hora>18</hora>
+                <sala>25</sala>
+            </sessao>
+        </sessoes>
+    </filme>
+    <filme codigo="FESTIVAL-3232">
+        <titulo>Cona II</titulo>
+        <realizador>John B.</realizador>
+        <duracao>35</duracao>
+        <sessoes>
+            <sessao id="1">
+                <data>10-05-2026</data>
+                <hora>12</hora>
+                <sala>25</sala>
+            </sessao>
+            <sessao id="2">
+                <data>11-05-2026</data>
+                <hora>17</hora>
+                <sala>25</sala>
+            </sessao>
+        </sessoes>
+    </filme>
+</filmes>
+
+</festival>

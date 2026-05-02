@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="catalogo.xsl"?>
+
+<catalogo
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="catalogo.xsd">
+
+    <produto id="1" categoria="laptop">
+        <nome>Lenovo IdeaPad</nome>
+        <preco>750</preco>
+        <stock>10</stock>
+    </produto>
+    
+    <produto id="2" categoria="smartphone">
+        <nome>Samsung Galaxy S21</nome>
+        <preco>900</preco>
+        <stock>5</stock>
+    </produto>
+    
+    <produto id="3" categoria="laptop">
+        <nome>Dell XPS 13</nome>
+        <preco>1200</preco>
+        <stock>3</stock>
+    </produto>
+</catalogo>

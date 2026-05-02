@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="loja.xsl"?>
+<loja>
+    <produto categoria="eletronica">
+        <nome>Telemóvel</nome>
+        <preco>300</preco>
+        <stock>3</stock>
+    </produto>
+    <produto categoria="eletronica">
+        <nome>Tablet</nome>
+        <preco>150</preco>
+        <stock>10</stock>
+    </produto>
+    <produto categoria="casa">
+        <nome>Aspirador</nome>
+        <preco>90</preco>
+        <stock>2</stock>
+    </produto>
+</loja>

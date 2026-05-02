@@ -22,13 +22,6 @@
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="nome" type="xs:string"/>
-                                                                <xs:element name="golos">
-                                                                    <xs:simpleType>
-                                                                        <xs:restriction base="xs:integer">
-                                                                            <xs:minInclusive value="0"/>
-                                                                        </xs:restriction>
-                                                                    </xs:simpleType>
-                                                                </xs:element>
                                                                 <xs:element name="marcadores" minOccurs="0">
                                                                     <xs:complexType>
                                                                         <xs:sequence>

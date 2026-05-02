@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="generoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ACAO"/>
+            <xs:enumeration value="COMEDIA"/>
+            <xs:enumeration value="DRAMA"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="filmeType">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="duracao" type="xs:int"/>
+            <xs:element name="classificacao" type="xs:float"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:int" use="required"/>
+        <xs:attribute name="genero" type="generoType" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="cinema">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="filme" type="filmeType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
